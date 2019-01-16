@@ -1,0 +1,631 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21788 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 445.820 ; gain = 97.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Freq_Counter' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_out_10k' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_out_10k' (1#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:40]
+INFO: [Synth 8-6157] synthesizing module 'PreGate' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'PreGate' (2#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:60]
+INFO: [Synth 8-6157] synthesizing module 'ActGate' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'ActGate' (3#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:80]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'Freq_Counter' (5#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:23]
+WARNING: [Synth 8-350] instance 'sp_unit' of module 'Freq_Counter' requires 4 connections, but only 3 given [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Duty_Counter_1' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Duty_Counter_1' (6#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Duty_Counter_2' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Duty_Counter_2' (7#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Duty_Counter_3' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'Duty_Counter_3' (8#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:97]
+INFO: [Synth 8-6157] synthesizing module 'Phase_Counter_1' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Counter_1' (9#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:23]
+WARNING: [Synth 8-350] instance 'phase_fast' of module 'Phase_Counter_1' requires 5 connections, but only 4 given [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:83]
+INFO: [Synth 8-6157] synthesizing module 'Phase_Counter_2' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Counter_2' (10#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:59]
+WARNING: [Synth 8-350] instance 'phase_mid' of module 'Phase_Counter_2' requires 5 connections, but only 4 given [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:90]
+INFO: [Synth 8-6157] synthesizing module 'Phase_Counter_3' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Counter_3' (11#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:99]
+WARNING: [Synth 8-350] instance 'phase_slow' of module 'Phase_Counter_3' requires 5 connections, but only 4 given [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:97]
+INFO: [Synth 8-6157] synthesizing module 'Data_Process' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Process' (12#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:140]
+INFO: [Synth 8-6157] synthesizing module 'SPI_Comm' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/SPI_Comm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Comm' (13#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/SPI_Comm.v:23]
+WARNING: [Synth 8-350] instance 'spi_slave' of module 'SPI_Comm' requires 8 connections, but only 6 given [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:115]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll_clk_wiz' [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (14#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40057]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (15#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40057]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (16#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll_clk_wiz' (17#1) [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (18#1) [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'top' (19#1) [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 500.977 ; gain = 152.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin spi_slave:SDI to constant 0 [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/top.v:115]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 500.977 ; gain = 152.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 500.977 ; gain = 152.598
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll_board.xdc] for cell 'clk_generator/inst'
+Finished Parsing XDC File [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll_board.xdc] for cell 'clk_generator/inst'
+Parsing XDC File [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll.xdc] for cell 'clk_generator/inst'
+Finished Parsing XDC File [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll.xdc] for cell 'clk_generator/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc]
+WARNING: [Vivado 12-507] No nets matched 'flag_IBUF'. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'sCLK_IBUF'. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'signal_IBUF'. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'signal1_IBUF'. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'signal2_IBUF'. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/constrs_1/new/xdcii.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Vivado Projects/Winter_Proj/Winter_Proj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado Projects/Winter_Proj/Winter_Proj.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado Projects/Winter_Proj/Winter_Proj.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.003 . Memory (MB): peak = 839.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clk_generator. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_generator/inst. (constraint file  {D:/Vivado Projects/Winter_Proj/Winter_Proj.runs/synth_1/dont_touch.xdc}, line 10).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               36 Bit    Registers := 4     
+	               32 Bit    Registers := 24    
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 14    
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+Module CLK_out_10k 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PreGate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ActGate 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Duty_Counter_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module Duty_Counter_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Duty_Counter_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Phase_Counter_1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module Phase_Counter_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Phase_Counter_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Data_Process 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+Module SPI_Comm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	               36 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'duty_mid/syn1_reg' into 'duty_fast/syn1_reg' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:73]
+INFO: [Synth 8-4471] merging register 'duty_mid/syn2_reg' into 'duty_fast/syn2_reg' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:74]
+INFO: [Synth 8-4471] merging register 'duty_slow/syn1_reg' into 'duty_fast/syn1_reg' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:112]
+INFO: [Synth 8-4471] merging register 'duty_slow/syn2_reg' into 'duty_fast/syn2_reg' [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:113]
+WARNING: [Synth 8-6014] Unused sequential element sp_unit/cnt2/cnt_out_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Freq_Counter.v:105]
+WARNING: [Synth 8-6014] Unused sequential element duty_mid/syn1_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:73]
+WARNING: [Synth 8-6014] Unused sequential element duty_mid/syn2_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:74]
+WARNING: [Synth 8-6014] Unused sequential element duty_slow/syn1_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:112]
+WARNING: [Synth 8-6014] Unused sequential element duty_slow/syn2_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Duty_Counter.v:113]
+WARNING: [Synth 8-6014] Unused sequential element phase_fast/P_off_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:48]
+WARNING: [Synth 8-6014] Unused sequential element phase_mid/P_off_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:87]
+WARNING: [Synth 8-6014] Unused sequential element phase_slow/P_off_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/Phase_Counter.v:127]
+WARNING: [Synth 8-6014] Unused sequential element spi_slave/rcv_buf_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/SPI_Comm.v:134]
+WARNING: [Synth 8-6014] Unused sequential element spi_slave/Data_rcv_reg was removed.  [D:/Vivado Projects/Winter_Proj/Winter_Proj.srcs/sources_1/new/SPI_Comm.v:60]
+INFO: [Synth 8-5545] ROM "freq/nolabel_line33/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "freq/nolabel_line33/gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "freq/pre/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "freq/pre/gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sp_unit/nolabel_line33/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sp_unit/nolabel_line33/gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sp_unit/pre/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sp_unit/pre/gate_buf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_mid/period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_mid/period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_mid/P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_slow/period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_slow/period_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty_slow/P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_mid/phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_mid/phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_mid/P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_slow/phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_slow/phase_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_slow/P_on" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\data_main/data_to_send_reg[35] )
+INFO: [Synth 8-3886] merging instance 'spi_slave/snd_step_reg[7]' (FDC_1) to 'spi_slave/snd_step_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_slave/snd_step_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_slave/snd_buf_reg[35] )
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/gate_buf_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/nolabel_line33/CLK_10k_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sp_unit/cnt2/gate_buf_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/snd_step_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (data_main/data_to_send_reg[35]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/snd_buf_reg[35]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_step_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (spi_slave/rcv_flag_reg) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'phase_slow/XOR_out_reg' (FD) to 'phase_mid/XOR_out_reg'
+INFO: [Synth 8-3886] merging instance 'phase_slow/syn1_reg' (FD) to 'phase_mid/syn1_reg'
+INFO: [Synth 8-3886] merging instance 'phase_mid/XOR_out_reg' (FD) to 'phase_fast/XOR_out_reg'
+INFO: [Synth 8-3886] merging instance 'phase_mid/syn1_reg' (FD) to 'phase_fast/syn1_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 839.941 ; gain = 491.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 853.930 ; gain = 505.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop spi_slave/snd_flag_reg is being inverted and renamed to spi_slave/snd_flag_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     8|
+|2     |CARRY4    |   152|
+|3     |LUT1      |    15|
+|4     |LUT2      |    31|
+|5     |LUT3      |    11|
+|6     |LUT4      |    44|
+|7     |LUT5      |   128|
+|8     |LUT6      |   107|
+|9     |MUXF7     |     2|
+|10    |MUXF8     |     1|
+|11    |PLLE2_ADV |     1|
+|12    |FDCE      |     6|
+|13    |FDPE      |     1|
+|14    |FDRE      |  1078|
+|15    |FDSE      |     3|
+|16    |IBUF      |     7|
+|17    |OBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |  1596|
+|2     |  clk_generator    |clk_pll         |     5|
+|3     |    inst           |clk_pll_clk_wiz |     5|
+|4     |  data_main        |Data_Process    |   106|
+|5     |  duty_fast        |Duty_Counter_1  |   152|
+|6     |  duty_mid         |Duty_Counter_2  |   196|
+|7     |  duty_slow        |Duty_Counter_3  |   196|
+|8     |  freq             |Freq_Counter    |   348|
+|9     |    act            |ActGate_1       |     5|
+|10    |    cnt1           |counter_2       |   160|
+|11    |    cnt2           |counter_3       |    75|
+|12    |    nolabel_line33 |CLK_out_10k     |    54|
+|13    |    pre            |PreGate_4       |    54|
+|14    |  phase_fast       |Phase_Counter_1 |    78|
+|15    |  phase_mid        |Phase_Counter_2 |   124|
+|16    |  phase_slow       |Phase_Counter_3 |   124|
+|17    |  sp_unit          |Freq_Counter_0  |   189|
+|18    |    act            |ActGate         |     3|
+|19    |    cnt1           |counter         |   132|
+|20    |    pre            |PreGate         |    54|
+|21    |  spi_slave        |SPI_Comm        |    66|
++------+-------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 856.602 ; gain = 169.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 856.602 ; gain = 508.223
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 68 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.602 ; gain = 519.695
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado Projects/Winter_Proj/Winter_Proj.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 856.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 16 10:39:43 2019...

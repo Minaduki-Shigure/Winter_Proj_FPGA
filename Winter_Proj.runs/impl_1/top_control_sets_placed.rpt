@@ -1,0 +1,105 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jan 16 10:40:30 2019
+| Host         : Player running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            2 |
+|      8 |            1 |
+|     14 |            1 |
+|    16+ |           31 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             120 |           31 |
+| No           | No                    | Yes                    |              14 |            2 |
+| No           | Yes                   | No                     |             186 |           24 |
+| Yes          | No                    | No                     |             840 |           94 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1016 |          128 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------------------+----------------------------------------+------------------+----------------+
+|         Clock Signal         |            Enable Signal            |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------------------+----------------------------------------+------------------+----------------+
+|  CLK_10k_BUFG                |                                     |                                        |                1 |              2 |
+|  sCLK_IBUF_BUFG              | spi_slave/SDO0_out                  |                                        |                1 |              2 |
+|  signal_IBUF_BUFG            |                                     |                                        |                2 |              4 |
+|  signal1_IBUF_BUFG           |                                     |                                        |                1 |              4 |
+|  clk_generator/inst/CLK_200M |                                     |                                        |                1 |              8 |
+| ~sCLK_IBUF_BUFG              |                                     | CS_IBUF                                |                2 |             14 |
+|  clk_generator/inst/CLK_100M |                                     |                                        |                7 |             26 |
+|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_mid/period_cnt[31]_i_1_n_0        |                8 |             62 |
+|  clk_generator/inst/CLK_100M |                                     | freq/nolabel_line33/cnt[31]_i_1__0_n_0 |                8 |             62 |
+|  clk_generator/inst/CLK_100M |                                     | freq/pre/cnt[31]_i_1_n_0               |                8 |             62 |
+|  clk_generator/inst/CLK_100M |                                     | sp_unit/pre/cnt[31]_i_1__1_n_0         |                8 |             62 |
+|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_slow/period_cnt[31]_i_1__0_n_0    |                8 |             62 |
+|  clk_generator/inst/CLK_100M | phase_fast/phase_cnt                | phase_mid/phase_cnt[31]_i_1_n_0        |                8 |             62 |
+|  clk_generator/inst/CLK_100M | phase_fast/phase_cnt                | phase_slow/phase_cnt[31]_i_1__0_n_0    |                8 |             62 |
+|  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_mid/P_on                         |                8 |             64 |
+|  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_fast/cat_in_pos                  |                8 |             64 |
+|  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_slow/P_on                        |                8 |             64 |
+|  clk_generator/inst/CLK_100M | phase_slow/P_on                     |                                        |                7 |             64 |
+|  signal1_IBUF_BUFG           | sp_unit/cnt1/cnt_out[31]_i_1__1_n_0 |                                        |                9 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_mid/P_on                          |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_slow/P_on                         |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_fast/cat_in_pos                   |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_mid/P_on                          |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_slow/P_on                         |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_fast/cat_in_pos                   |                8 |             64 |
+|  CLK_10k_BUFG                | freq/act/cnt_1                      | freq/act/cnt0_0                        |                8 |             64 |
+|  signal_IBUF_BUFG            | freq/cnt1/cnt_out[31]_i_1_n_0       |                                        |                8 |             64 |
+|  signal_IBUF_BUFG            | freq/act/cnt                        | freq/act/cnt0                          |                8 |             64 |
+|  CLK_10k_BUFG                | freq/cnt2/cnt_out[31]_i_1__0_n_0    |                                        |                7 |             64 |
+|  clk_generator/inst/CLK_100M | phase_mid/P_on                      |                                        |                7 |             64 |
+|  clk_generator/inst/CLK_100M | phase_fast/cat_in_pos               |                                        |                6 |             64 |
+|  signal1_IBUF_BUFG           | sp_unit/act/cnt                     | sp_unit/act/cnt0                       |                8 |             64 |
+|  clk_generator/inst/CLK_100M | spi_slave/snd_buf                   |                                        |                9 |             70 |
+| ~flag_IBUF_BUFG              |                                     |                                        |               19 |             76 |
+|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                |                                        |               19 |            128 |
+|  clk_generator/inst/CLK_200M | duty_mid/P_on                       |                                        |               10 |            128 |
+|  clk_generator/inst/CLK_200M | duty_slow/P_on                      |                                        |               11 |            128 |
++------------------------------+-------------------------------------+----------------------------------------+------------------+----------------+
+
+

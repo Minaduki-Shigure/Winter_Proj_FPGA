@@ -95,6 +95,9 @@ module counter(
     reg gate_buf;
     
     always @ (posedge signal)
+        gate_buf <= gate;
+    
+    always @ (posedge signal)
     begin
         if ((gate == 1'b1) && (gate_buf == 1'b0))
             cnt <= 32'b1;

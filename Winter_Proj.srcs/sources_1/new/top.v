@@ -42,18 +42,19 @@ module top(
     wire [31:0] P_on, P_off;
     wire [31:0] sp_result;
 
+    wire CLK_100M;
     wire CLK_200M;
     //wire CLK_300M;
     
     Freq_Counter freq(
-        .CLK(CLK),
+        .CLK(CLK_100M),
         .signal(signal),
         .cnt1_out(cnt1),
         .cnt2_out(cnt2)
         );
         
     Freq_Counter sp_unit(
-        .CLK(CLK),
+        .CLK(CLK_100M),
         .signal(signal1),
         .cnt1_out(sp_result)
         );
@@ -80,21 +81,21 @@ module top(
         );
     
     Phase_Counter_1 phase_fast(
-        .CLK(CLK),
+        .CLK(CLK_100M),
         .M(signal1),
         .N(signal2),
         .P_on(phase1)
         );
     
     Phase_Counter_2 phase_mid(
-        .CLK(CLK),
+        .CLK(CLK_100M),
         .M(signal1),
         .N(signal2),
         .P_on(phase2)
         );
     
     Phase_Counter_3 phase_slow(
-        .CLK(CLK),
+        .CLK(CLK_100M),
         .M(signal1),
         .N(signal2),
         .P_on(phase3)
@@ -112,17 +113,21 @@ module top(
         );
     
     SPI_Comm spi_slave(
-        .CLK(CLK),
-        .sCLK(sCLK),
+        .CLK(CLK_100M),
+        .sCLK(sCLK),//JB0
         .En(1'b1),
-        .CS(CS),
+        .CS(CS),//JB1
         .Data_snd(data_to_send),
-        .SDO(SDO)
+        .SDO(SDO)//JB2
         //.SDI(),
         //.Data_rcv()
         );
         
-        //Reserved for CLK_200M
+    clk_pll clk_generator(
+        .CLK_IN(CLK),
+        .CLK_100M(CLK_100M),
+        .CLK_200M(CLK_200M)
+        );
         
     assign freq_high_flag_1 = (cnt1 > 32'd400000 ) ? 2'b1 : 2'b0;
     assign freq_high_flag_2 = (cnt1 > 32'd12000000) ? 2'b1 : 2'b0;
