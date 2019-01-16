@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Jan 16 10:40:30 2019
+| Date         : Wed Jan 16 16:21:01 2019
 | Host         : Player running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -70,31 +70,31 @@ Table of Contents
 |  clk_generator/inst/CLK_200M |                                     |                                        |                1 |              8 |
 | ~sCLK_IBUF_BUFG              |                                     | CS_IBUF                                |                2 |             14 |
 |  clk_generator/inst/CLK_100M |                                     |                                        |                7 |             26 |
-|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_mid/period_cnt[31]_i_1_n_0        |                8 |             62 |
+|  clk_generator/inst/CLK_100M |                                     | sp_unit/pre/cnt[31]_i_1__1_n_0         |                8 |             62 |
 |  clk_generator/inst/CLK_100M |                                     | freq/nolabel_line33/cnt[31]_i_1__0_n_0 |                8 |             62 |
 |  clk_generator/inst/CLK_100M |                                     | freq/pre/cnt[31]_i_1_n_0               |                8 |             62 |
-|  clk_generator/inst/CLK_100M |                                     | sp_unit/pre/cnt[31]_i_1__1_n_0         |                8 |             62 |
-|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_slow/period_cnt[31]_i_1__0_n_0    |                8 |             62 |
 |  clk_generator/inst/CLK_100M | phase_fast/phase_cnt                | phase_mid/phase_cnt[31]_i_1_n_0        |                8 |             62 |
 |  clk_generator/inst/CLK_100M | phase_fast/phase_cnt                | phase_slow/phase_cnt[31]_i_1__0_n_0    |                8 |             62 |
-|  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_mid/P_on                         |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_slow/period_cnt[31]_i_1__0_n_0    |                8 |             62 |
+|  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                | duty_mid/period_cnt[31]_i_1_n_0        |                8 |             62 |
+|  CLK_10k_BUFG                | freq/cnt2/cnt_out[31]_i_1__0_n_0    |                                        |                7 |             64 |
+|  CLK_10k_BUFG                | freq/act/cnt_1                      | freq/act/cnt0_0                        |                8 |             64 |
+|  clk_generator/inst/CLK_100M | phase_fast/cat_in_pos               |                                        |                6 |             64 |
 |  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_fast/cat_in_pos                  |                8 |             64 |
+|  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_mid/P_on                         |                8 |             64 |
 |  clk_generator/inst/CLK_100M | phase_fast/XOR_out                  | phase_slow/P_on                        |                8 |             64 |
-|  clk_generator/inst/CLK_100M | phase_slow/P_on                     |                                        |                7 |             64 |
-|  signal1_IBUF_BUFG           | sp_unit/cnt1/cnt_out[31]_i_1__1_n_0 |                                        |                9 |             64 |
-|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_mid/P_on                          |                8 |             64 |
-|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_slow/P_on                         |                8 |             64 |
 |  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_fast/cat_in_pos                   |                8 |             64 |
-|  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_mid/P_on                          |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_mid/P_on                          |                8 |             64 |
 |  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_slow/P_on                         |                8 |             64 |
 |  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_fast/cat_in_pos                   |                8 |             64 |
-|  CLK_10k_BUFG                | freq/act/cnt_1                      | freq/act/cnt0_0                        |                8 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/syn1                      | duty_mid/P_on                          |                8 |             64 |
 |  signal_IBUF_BUFG            | freq/cnt1/cnt_out[31]_i_1_n_0       |                                        |                8 |             64 |
 |  signal_IBUF_BUFG            | freq/act/cnt                        | freq/act/cnt0                          |                8 |             64 |
-|  CLK_10k_BUFG                | freq/cnt2/cnt_out[31]_i_1__0_n_0    |                                        |                7 |             64 |
-|  clk_generator/inst/CLK_100M | phase_mid/P_on                      |                                        |                7 |             64 |
-|  clk_generator/inst/CLK_100M | phase_fast/cat_in_pos               |                                        |                6 |             64 |
+|  clk_generator/inst/CLK_100M | phase_slow/P_on                     |                                        |                7 |             64 |
 |  signal1_IBUF_BUFG           | sp_unit/act/cnt                     | sp_unit/act/cnt0                       |                8 |             64 |
+|  signal1_IBUF_BUFG           | sp_unit/cnt1/cnt_out[31]_i_1__1_n_0 |                                        |                9 |             64 |
+|  clk_generator/inst/CLK_100M | phase_mid/P_on                      |                                        |                7 |             64 |
+|  clk_generator/inst/CLK_200M | duty_fast/sel                       | duty_slow/P_on                         |                8 |             64 |
 |  clk_generator/inst/CLK_100M | spi_slave/snd_buf                   |                                        |                9 |             70 |
 | ~flag_IBUF_BUFG              |                                     |                                        |               19 |             76 |
 |  clk_generator/inst/CLK_200M | duty_fast/cat_in_pos                |                                        |               19 |            128 |
